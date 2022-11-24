@@ -87,6 +87,8 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Converter" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Converter" />
       </list>
     </recent_temporary>
   </component>
