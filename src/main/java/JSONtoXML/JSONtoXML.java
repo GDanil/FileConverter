@@ -106,30 +106,30 @@ public class JSONtoXML
         return Players;
     }
 
-    private static boolean checkVil(String name, ArrayList<XMLConference> vil)
+    private static boolean checkConference(String name, ArrayList<XMLConference> Conference)
     {
-        for(XMLConference v:vil)
+        for(XMLConference C:Conference)
         {
-            if(v.getName().equals(name)) return true;
+            if(C.getName().equals(name)) return true;
         }
         return false;
     }
 
-    private static XMLConference findVil(String name, ArrayList<XMLConference> vil)
+    private static XMLConference findConference(String name, ArrayList<XMLConference> Conference)
     {
-        for (int i=vil.size()-1;i>=0;i--)
+        for (int i=Conference.size()-1;i>=0;i--)
         {
-            if (vil.get(i).getName().equals(name))
-                return vil.get(i);
+            if (Conference.get(i).getName().equals(name))
+                return Conference.get(i);
         }
         return null;
     }
 
     private static boolean checkClub(String name, ArrayList<XMLClub> Club)
     {
-        for (XMLClub c : Club)
+        for (XMLClub C : Club)
         {
-            if(c.getName().equals(name))
+            if(C.getName().equals(name))
                 return true;
         }
         return false;
@@ -173,10 +173,10 @@ public class JSONtoXML
         {
             JSONPlayer JSONPlayer =Players.getPlayers().get(i);
 
-            if (!checkVil(JSONPlayer.getConference(),NBA.getConferences()))
+            if (!checkConference(JSONPlayer.getConference(),NBA.getConferences()))
                 NBA.addConference(JSONPlayer.getConference());
 
-            XMLConference XMLConference = findVil(JSONPlayer.getConference(),NBA.getConferences());
+            XMLConference XMLConference = findConference(JSONPlayer.getConference(),NBA.getConferences());
 
 
 
@@ -188,14 +188,13 @@ public class JSONtoXML
                 //check if we need to create new
                 if (!checkClub(JSONClub.getName(), XMLConference.getClubs()))
                 {
-                    //XMLvillage.setName(jsonNinja.getName());
 
                     //create new dev
                     XMLConference.addClub(JSONClub.getName());
                 }
                 XMLClub = findClub(JSONClub.getName(), XMLConference.getClubs());
 
-                //add ranks
+                //add Position
                 for (int k = 0; k< JSONPlayer.getPosition().size(); k++)
                 {
                     JSONPosition JSONPosition=JSONPlayer.getPosition().get(k);
@@ -203,7 +202,6 @@ public class JSONtoXML
                     XMLPosition XMLPosition;
                     if(!checkPosition(JSONPosition.getName(),XMLClub.getPositions()))
                     {
-                        //XMLclan.setName(jsonNinja.getName());
 
                         XMLConference.addClub(JSONPosition.getName());
                     }
@@ -259,7 +257,7 @@ public class JSONtoXML
                     writer.writeStartElement("Position");
                     writer.writeAttribute("Position", Position.getName());
 
-                    writer.writeStartElement("Ninjas");
+                    writer.writeStartElement("Players");
 
                     for (int l = 0; l < Position.getPlayers().size(); l++)
                     {
@@ -304,4 +302,6 @@ public class JSONtoXML
             e.printStackTrace();
         }
     }
+
+
 }

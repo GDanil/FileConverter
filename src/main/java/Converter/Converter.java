@@ -12,11 +12,13 @@ public class Converter
         {
             XMLtoJSON.ParserXML(pathToXML);
             XMLtoJSON.createFile(XMLtoJSON.ConvetToJSON(), pathToNewFile);
+
         } catch (Exception ex)
         {
             ex.printStackTrace();
         }
     }
+
 
 
     public static void convertToXML(String pathToJSON, String pathToNewFile)
@@ -25,6 +27,7 @@ public class Converter
         {
             JSONtoXML.parseJSON(pathToJSON);
             JSONtoXML.createXML(JSONtoXML.ConvertToXML(), pathToNewFile);
+
         }
         catch (Exception ex)
         {
@@ -32,13 +35,21 @@ public class Converter
         }
     }
 
-    /*public void  doSum()
+    /*public List<String> testFilter(String pathToJSON)
     {
-        XML w = XMLtoJSON.getNBA();
-        for (XMLConference publisher : w.getConferences())
+        try
         {
-            int y = 2;
+            JSONtoXML.parseJSON(pathToJSON);
+        } catch (Exception ex)
+        {
+            ex.printStackTrace();
         }
-    }*/
 
+        JSON Wq = JSONtoXML.getPlayers();
+
+        List<JSONPlayer> list = Wq.getPlayers();
+
+       // List<String> list3 = list.stream().filter(e->e.getAverage_Points().contains(12)).map(e->e.getName()).collect(Collectors.toList());
+        return list3;
+    }*/
 }

@@ -1,5 +1,7 @@
 package XMLFiles;
+
 import java.util.ArrayList;
+
 public class XMLClub
 {
     private String name;
@@ -30,7 +32,8 @@ public class XMLClub
         Positions.add(new XMLPosition(name));
     }
 
-    public int returnLength(){
+    public int returnLength()
+    {
         return Positions.size();
     }
 

@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44de0936-8f85-42a6-910b-e00b720317fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Converter/Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JSONtoXML/JSONtoXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/XMLtoJSON/XMLtoJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Converter/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JSONtoXML/JSONtoXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JSONtoXML/JSONtoXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLFiles/XMLClub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XMLFiles/XMLClub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLFiles/XMLConference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XMLFiles/XMLConference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLtoJSON/XMLtoJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XMLtoJSON/XMLtoJSON.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="JSONtoXML" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,28 +39,31 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2HruVXkr7PyixD9v8m7PSdOegsN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Данил/Downloads/jackson-databind-2.14.0.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Labs_java/Practice2",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Labs_java\Practice2\src\main\java" />
@@ -108,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669305743117</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JSONtoXML класс">
+      <created>1669305936944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669305936944</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Converter класс">
+      <created>1669306006080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669306006080</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +143,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="JSONtoXML" />
                       </list>
                     </value>
                   </entry>
@@ -136,7 +157,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JSON и XML классы" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSON и XML классы" />
+    <MESSAGE value="JSONtoXML класс" />
+    <MESSAGE value="Converter класс" />
+    <option name="LAST_COMMIT_MESSAGE" value="Converter класс" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -145,31 +168,6 @@
           <properties class="java.io.FileNotFoundException" package="java.io" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/XMLtoJSON/XMLtoJSON.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/XMLtoJSON/XMLtoJSON.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/XMLtoJSON/XMLtoJSON.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/XMLtoJSON/XMLtoJSON.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

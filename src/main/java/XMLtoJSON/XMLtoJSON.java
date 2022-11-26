@@ -31,6 +31,7 @@ public class XMLtoJSON extends DefaultHandler
         return NBA;
     }
 
+
     private static class XMLHandler extends DefaultHandler
     {
         @Override

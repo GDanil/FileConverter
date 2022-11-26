@@ -1,9 +1,12 @@
 package XMLFiles;
+
+
 import java.util.ArrayList;
+
 public class XMLConference
 {
     private String name;
-    private  ArrayList<XMLClub> Clubs;
+    private ArrayList<XMLClub> Clubs;
 
     public XMLConference(String name)
     {
@@ -35,4 +38,5 @@ public class XMLConference
     {
         return Clubs.size();
     }
+
 }
